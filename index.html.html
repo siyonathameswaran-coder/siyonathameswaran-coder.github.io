@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Siyona T — BCA student and aspiring software developer.">
+  <title>Siyona T | Portfolio</title>
+  <style>
+    :root{--navy:#101b35;--blue:#4169e1;--ink:#1c2740;--muted:#65718a;--paper:#f6f8fc;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,92%);margin:auto}
+    header{background:var(--white);border-bottom:1px solid #e7ebf3;position:sticky;top:0;z-index:5}
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;color:var(--navy);letter-spacing:.3px;font-size:1.15rem}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}
+    .navlinks a:hover{color:var(--blue)}
+    .hero{background:linear-gradient(125deg,#101b35,#233d76);color:white;padding:88px 0 82px}
+    .hero-grid{display:grid;grid-template-columns:1.5fr .8fr;align-items:center;gap:40px}
+    .eyebrow{color:#b9c9ff;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.08;margin:14px 0}
+    .hero p{max-width:650px;color:#e1e8ff;font-size:1.08rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:11px 18px;border-radius:9px;font-weight:700;background:white;color:var(--navy)}
+    .btn.outline{background:transparent;color:white;border:1px solid #aabaff}
+    .profile-card{border:1px solid #52658f;background:#ffffff12;border-radius:18px;padding:28px;text-align:center}
+    .initials{width:105px;height:105px;border-radius:50%;margin:0 auto 16px;background:#dce6ff;color:#233d76;display:grid;place-items:center;font-size:2rem;font-weight:800}
+    .profile-card strong{display:block;font-size:1.1rem}
+    .profile-card span{color:#dce6ff;font-size:.9rem}
+    section{padding:68px 0}
+    .section-title{font-size:1.85rem;color:var(--navy);margin:0 0 8px}
+    .section-lead{color:var(--muted);margin:0 0 28px}
+    .about{max-width:790px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:white;border:1px solid #e7ebf3;border-radius:14px;padding:22px;box-shadow:0 8px 24px #1b2a4a08}
+    .card h3{margin:0 0 8px;color:var(--navy)}
+    .card p{margin:0;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:#e9efff;color:#27468e;border:1px solid #d8e2ff;border-radius:999px;padding:8px 13px;font-weight:650;font-size:.92rem}
+    .project-note{border-left:4px solid var(--blue)}
+    .contact-links{display:flex;flex-wrap:wrap;gap:12px}
+    .contact-links a{background:white;border:1px solid #e1e7f2;border-radius:9px;padding:11px 15px;color:#27468e;font-weight:700}
+    footer{background:var(--navy);color:#dce4fb;text-align:center;padding:24px 0;font-size:.9rem}
+    @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.profile-card{max-width:320px}.grid{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.82rem}nav{align-items:flex-start;padding:15px 0;flex-direction:column}.hero{padding:62px 0}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">SIYONA T</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">BCA · Final Year Student</div>
+          <h1>Hello, I'm Siyona.</h1>
+          <p>I'm an aspiring software developer interested in building useful applications and learning new technologies. I have foundational knowledge of Python, Java, SQL, HTML, CSS and JavaScript.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Contact Me</a>
+            <a class="btn outline" href="#skills">Explore My Skills</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="initials">ST</div>
+          <strong>Siyona T</strong>
+          <span>Aspiring Software Developer</span>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-lead">A little introduction</p>
+        <p>I am a final-year Bachelor of Computer Applications (BCA) student. I enjoy learning programming concepts and developing my technical skills. I am looking for an entry-level opportunity where I can learn, contribute and grow as a software developer.</p>
+      </div>
+    </section>
+
+    <section id="education" style="background:#fff">
+      <div class="wrap">
+        <h2 class="section-title">Education</h2>
+        <p class="section-lead">Academic background</p>
+        <div class="card">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>Final Year · Jamal Mohamed College</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-lead">Technologies I have learned</p>
+        <div class="skills">
+          <span class="skill">Python</span><span class="skill">Java</span><span class="skill">SQL</span>
+          <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="background:#fff">
+      <div class="wrap">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lead">Academic and personal work</p>
+        <div class="card project-note">
+          <h3>Projects coming soon</h3>
+          <p>I plan to add my academic project and practical work here as I build them during my next semester.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-lead">Add your verified contact and profile links below.</p>
+        <div class="contact-links">
+          <!-- Replace the placeholders below with your actual details before publishing. -->
+          <a href="mailto:siyonathameswaran@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/siyona-thameswaran-5b9915404/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/siyonathameswaran-coder" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Siyona T · Personal Portfolio</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
